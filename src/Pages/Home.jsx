@@ -1,47 +1,52 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import vectr from '../assets/Vector2.svg'
 import vectr2 from '../assets/Vector3.svg'
 import vectr222 from '../assets/Frame76.svg'
 import vectr2222 from '../assets/Frame7.svg'
 import famel from '../assets/Frame6.svg'
-import vectr22 from '../assets/Vector(2.svg'
+import vectr22 from '../assets/Vector22.svg'
 import { Checkbox, Label } from "flowbite-react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
   return (
     <>
       <header className='mt-[150px] w-full'>
             <div className="container">
                 <div className='w-full min-h-[650px] h-full headers rounded-[26px] flex flex-col items-center pt-[70px] pb-[40px]'>
-                        <button className='w-[207px] h-[40px] rounded-[200px] border text-white'>Консультация от врачей</button>
+                        <button className='w-[207px] h-[40px] rounded-[200px] border text-white hover:bg-white hover:text-[#0129E3]'>Консультация от врачей</button>
                         <p className='text-white pt-[20px] text-[20px] text-center pb-[30px] md:text-[60px]'>Получайте бесплатную консультацию <br /> от лучших специалистов</p>
                         <div className='flex items-center justify-center gap-[20px] flex-wrap'>
-                            <button className='flex justify-center items-center w-[291.67px] h-[76px] bg-white rounded-[16px] gap-[13.31px]'>
+                            <button className='flex justify-center items-center w-[291.67px] h-[76px] bg-white rounded-[16px] gap-[13.31px] hover:bg-slate-200'>
                                 <i className='bx bx-star text-[#0129E3]'></i>
                                 <p>Лучшие консультанты</p>
                             </button>
-                            <button className='flex justify-center items-center w-[291.67px] h-[76px] bg-white rounded-[16px] gap-[13.31px]'>
+                            <button className='flex justify-center items-center w-[291.67px] h-[76px] bg-white rounded-[16px] gap-[13.31px] hover:bg-slate-200'>
                                 <img src={vectr} alt="alt" />
                                 <p>Лучшие консультанты</p>
                             </button>
-                            <button className='flex justify-center items-center w-[291.67px] h-[76px] bg-white rounded-[16px] gap-[13.31px]'>
+                            <button className='flex justify-center items-center w-[291.67px] h-[76px] bg-white rounded-[16px] gap-[13.31px] hover:bg-slate-200'>
                                 <img src={vectr2} alt="alt" />
                                 <p>Лучшие консультанты</p>
                             </button>
                         </div>
                         <div className='flex items-center justify-center gap-[20px] flex-wrap mt-[90px]'>
-                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white md:w-[323.75px] md:h-[133px]'>
+                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white md:w-[323.75px] md:h-[133px] hover:bg-yellow-400 border-none cc'>
                                 <p className='md:text-[50px]'>+1 000</p>
                                 <p className='text-[10px] md:text-[16px]'>Врачей различных специализаций </p>
                             </div>
-                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white md:w-[323.75px] md:h-[133px]'>
+                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white md:w-[323.75px] md:h-[133px] hover:bg-yellow-400 border-none cc'>
                                 <p className='md:text-[50px]'>24/7</p>
                                 <p className='text-[10px] md:text-[16px]'>Врачей различных специализаций </p>
                             </div>
-                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white md:w-[323.75px] md:h-[133px]'>
+                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white md:w-[323.75px] md:h-[133px] hover:bg-yellow-400 border-none cc'>
                                 <p className='md:text-[50px]'>+ 95%</p>
                                 <p className='text-[10px] md:text-[16px]'>Врачей различных специализаций </p>
                             </div>
-                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white  md:w-[323.75px] md:h-[133px]'>
+                            <div className='p-[26px] bg-[#FFFFFF80] rounded-[20px] w-[150px] border text-white  md:w-[323.75px] md:h-[133px] hover:bg-yellow-400 border-none cc'>
                                 <p className='md:text-[50px]'>+20 000</p>
                                 <p className='text-[10px] md:text-[16px]'>Врачей различных специализаций </p>
                             </div>
@@ -237,7 +242,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img className='' src={vectr222} alt="alt" />
+                                    <img  data-aos="fade-up" data-aos-duration="1000" className='' src={vectr222} alt="alt" />
                             </div>
                         </div>
 
@@ -255,7 +260,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img className='order-1' src={vectr2222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" className='order-1' src={vectr2222} alt="alt" />
                             </div>
                         </div>
 
@@ -290,7 +295,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img src={famel} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" src={famel} alt="alt" />
                             </div>
                         </div>
 
@@ -308,7 +313,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img className='order-1' src={vectr2222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" className='order-1' src={vectr2222} alt="alt" />
                             </div>
                         </div>
 
@@ -343,7 +348,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img src={vectr222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" src={vectr222} alt="alt" />
                             </div>
                         </div>
 
@@ -361,7 +366,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img className='order-1' src={vectr2222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" className='order-1' src={vectr2222} alt="alt" />
                             </div>
                         </div>
 
@@ -396,7 +401,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img src={famel} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" src={famel} alt="alt" />
                             </div>
                         </div>
 
@@ -414,7 +419,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img className='order-1' src={vectr2222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" className='order-1' src={vectr2222} alt="alt" />
                             </div>
                         </div>
 
@@ -449,7 +454,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img src={vectr222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" src={vectr222} alt="alt" />
                             </div>
                         </div>
 
@@ -467,7 +472,7 @@ const Home = () => {
                                             </span>
                                             </p>
                                     </div>
-                                    <img className='order-1' src={vectr2222} alt="alt" />
+                                    <img data-aos="fade-up" data-aos-duration="1000" className='order-1' src={vectr2222} alt="alt" />
                             </div>
                         </div>
 
@@ -483,22 +488,22 @@ const Home = () => {
 
                     <div className='w-full flex justify-center items-center'>
                             <div className='max-w-[438px] w-full flex  justify-between'>
-                                <button className='lg:w-[54px] lg:h-[54px] bg-[#0129E3] rounded-xl text-white'>
+                                <button className='lg:w-[54px] lg:h-[54px] bg-[#0129E3] rounded-xl text-white hover:bg-slate-200'>
                                     <i class='bx bx-chevron-left'></i>
                                 </button>
-                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl'>
+                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl hover:bg-slate-200'>
                                     1
                                 </button>
-                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl'>
+                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl hover:bg-slate-200'>
                                     2
                                 </button>
-                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl'>
+                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl hover:bg-slate-200'>
                                     3
                                 </button>
-                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl'>
+                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl hover:bg-slate-200'>
                                     4
                                 </button>
-                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl'>
+                                <button className='lg:w-[54px] lg:h-[54px] bg-white rounded-xl hover:bg-slate-200'>
                                     ...
                                 </button>
                                 <button className='lg:w-[54px] lg:h-[54px] bg-[#0129E3] rounded-xl text-white'>

@@ -11,6 +11,13 @@ body{
   font-family: sans-serif;
   background-color: #F8F8F8;
 }
+button{
+
+  transition:0.4s
+}
+.cc{
+  transition: 0.3s;
+}
 .container{
   max-width: 1420px;
   width: 100%;
