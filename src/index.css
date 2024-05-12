@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  background-color: #F8F8F8;
+}
+.container{
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.headers{
+  background-image: url('./assets/Frame24.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+  background-color: #F8F8F8;
+  
+}
+.card{
+  background: linear-gradient(135deg, #379FF2 1.53%, #022FE4 90.79%);
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  color: white;
+  padding: 17px 24px;
+}
+.cards{
+  padding: 18px 16px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.cards2{
+  padding: 18px 16px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.brr{
+  border-bottom:1px solid rgba(255, 255, 255, 0.192);
+}
+.foterend{
+  border-top: 1px solid rgba(255, 255, 255, 0.267);
+  margin-top: 86px;
+}
+/* .mobilesort{
+  overflow: auto;
+  white-space: nowrap;
+} */
